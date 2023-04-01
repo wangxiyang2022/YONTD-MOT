@@ -1,0 +1,5 @@
+# ninja log v5
+1	124268	1672626641000000000	/media/wangxiyang/One Touch/DetMOT_CASA/CasA/build/temp.linux-x86_64-cpython-38/pcdet/ops/votr_ops/src/votr_api.o	1433fcc1ec281ab0
+0	162187	1672626679000000000	/media/wangxiyang/One Touch/DetMOT_CASA/CasA/build/temp.linux-x86_64-cpython-38/pcdet/ops/votr_ops/src/build_attention_indices_gpu.o	bd2b0d7b72421f9f
+0	162288	1672626679000000000	/media/wangxiyang/One Touch/DetMOT_CASA/CasA/build/temp.linux-x86_64-cpython-38/pcdet/ops/votr_ops/src/group_features_gpu.o	bc5dde3327389faf
+0	162364	1672626679000000000	/media/wangxiyang/One Touch/DetMOT_CASA/CasA/build/temp.linux-x86_64-cpython-38/pcdet/ops/votr_ops/src/build_mapping_gpu.o	899b99eb790f7665

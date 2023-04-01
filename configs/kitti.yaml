@@ -1,0 +1,61 @@
+
+# --------------------------------- KITTI Dataset train or val spilt -------------------------------
+tracking_seqs: [0,2,5,6,8,9,12,14,16,18,19]
+#tracking_seqs: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28]
+#split: "testing"  # training   testing
+#tracking_seqs: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+split: "training"  # training   testing
+class_names: ['Car', 'Pedestrian', 'Cyclist']
+#class_names: ['Car']
+
+
+# --------------------------------- Public Detector -------------------------------
+public_detector: False
+public_detections: "data/kitti/detection/casa_Car_training"
+
+
+# --------------------------------- Path Define -------------------------------
+data_path: "data/kitti/tracking"
+save_path: "output"
+
+# ------------------------------------ Hyperparamenters ---------------------------------
+confidence_his_max: 9  #9
+max_ages: 48  #33
+Car:
+  min_frames: 1
+  confidence_threshold: 0.3
+
+Pedestrian:
+  min_frames: 1
+  confidence_threshold: 0.1
+
+
+# ------------------------------------ 2D Detector ---------------------------------
+detector_name_2d: "FasterRCNN"   # MaskRCNN  FasterRCNN
+FasterRCNN:
+  num_classes: 2
+  ckpt: "weights/FasterRCNN/resNetFpn-model.pth"  #  weights/FasterRCNN/resNetFpn-model.pth"
+MaskRCNN:
+  num_classes: 91
+  ckpt: "detector/mask_rcnn/maskrcnn_resnet50_fpn_coco.pth"
+
+# ------------------------------------ 3D Detector ---------------------------------
+detector_name_3d: "PCDet"  # CasA  TED  PCDet
+pcdet_yaml: PointRCNN
+
+TED:
+  cfg: "detector/TED/tools/cfgs/models/kitti/TED-S.yaml"
+  ckpt: "weights/TED/kitti/TED-S.pth"
+CasA:
+  cfg: "detector/CasA/tools/cfgs/kitti_models/CasA-V.yaml"
+  ckpt: "weights/CasA/kitti/CasA-V.pth"
+PCDet:
+  PVRCNN:
+    cfg: "detector/pcdet/tools/cfgs/kitti_models/pv_rcnn.yaml"
+    ckpt: "weights/OpenPCDet/PVRCNN/kitti/pv_rcnn_8369.pth"
+  VoxelRCNN:
+    cfg: "detector/pcdet/tools/cfgs/kitti_models/voxel_rcnn_car.yaml"
+    ckpt: "weights/OpenPCDet/VoxelRCNN/kitti/voxel_rcnn_car_8454.pth"
+  PointRCNN:
+    cfg: "detector/pcdet/tools/cfgs/kitti_models/pointrcnn.yaml"
+    ckpt: "weights/OpenPCDet/PointRCNN/kitti/pointrcnn_7870.pth"

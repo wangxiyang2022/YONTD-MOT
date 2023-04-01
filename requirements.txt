@@ -1,0 +1,15 @@
+python-opencv
+matplotlib
+numpy
+llvmlite
+numba
+tensorboardX
+easydict
+pyyaml
+scikit-image
+tqdm
+SharedArray
+json
+cv2
+filterpy
+SharedArray

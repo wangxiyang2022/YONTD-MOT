@@ -1,0 +1,10 @@
+data/
+output/
+weights/
+detector/mmdetection/
+detector/mask_rcnn/venv/
+detector/pcdet/build/
+detector/pcdet/dist/
+detector/pcdet/output/
+detector/pcdet/data/
+*.so
