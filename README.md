@@ -20,7 +20,7 @@ Firstly, this paper proposes a new multi-object tracking framework based on mult
 
 The multi-modal fusion-based multi-object tracking method proposed in this paper is structured as shown in Fig. 2. The structure consists of three modules: data input module, detection and trajectory regression module, and trajectory management module. The detection and trajectory regression module includes 2D/3D detectors, state prediction, and fusion confidence mechanism.
 
-![Figure 2.drawio](E:\论文相关\小论文\DetMOT\原图\Figure 2.drawio.png)
+![Figure 2.drawio](https://github.com/wangxiyang2022/YONTD-MOT/blob/14ad6ec27bb7d43668aad92cb51f3e9696b49ecc/assets/Figure2.png)
 
 
 
@@ -34,11 +34,11 @@ The multi-modal fusion-based multi-object tracking method proposed in this paper
 
 |      Detectors       | HOTA(Car) | MOTA(Car) | IDs(Car) | weights                                                      |
 | :------------------: | :-------: | :-------: | :------: | ------------------------------------------------------------ |
-|         CasA         |   76.37   |   80.40   |  89.42   | [google](https://drive.google.com/file/d/1g1LcHCggUarBzEGxSR6b3cxJJsa7BTRg/view?usp=share_lin)    [baiduyun(6666)](链接：https://pan.baidu.com/s/1FsE-ZuRea_tQdKwxL6ap9Q <br/>提取码：6666 <br/>--来自百度网盘超级会员V5的分享) |
-| OpenPCDet/Voxel-RCNN |   77.52   |   82.11   |  90.75   | [google](https://drive.google.com/file/d/1EXN9vDlNuaoQi63M5PnosrYomqnxwdDz/view?usp=share_link)    [baiduyun(6666)](链接：https://pan.baidu.com/s/1QxL_K1zUJAaHyxVsWGdBjw <br/>提取码：6666 <br/>--来自百度网盘超级会员V5的分享) |
-|  OpenPCDet/PV-RCNN   |   75.88   |   76.11   |  88.58   | [google](https://drive.google.com/file/d/1EXN9vDlNuaoQi63M5PnosrYomqnxwdDz/view?usp=share_link)    [baiduyun(6666)](链接：https://pan.baidu.com/s/1lGYGy4_1ReUoxUkAzr8rQg <br/>提取码：6666 <br/>--来自百度网盘超级会员V5的分享) |
-| OpenPCDet/Point-RCNN |   54.25   |   48.34   |  66.22   | [google](https://drive.google.com/file/d/1Dpz0PMWWQOESabqyyEhN7S_jCQSqcK_K/view?usp=share_link)    [baiduyun(6666)](链接：https://pan.baidu.com/s/1_MWx4YvX8edoJ-SskyL5LA <br/>提取码：6666 <br/>--来自百度网盘超级会员V5的分享) |
-|     Faster RCNN      |   ----    |   ----    |   ---    | [google](/https://drive.google.com/file/d/1b2f9HKK_dbPIDcoJfW4XmKVIcSgvI6Js/view?usp=share_link)    [baiduyun(6666)](链接：https://pan.baidu.com/s/1KGby_npWfRj9SMzxGmVhAw <br/>提取码：6666 <br/>--来自百度网盘超级会员V5的分享) |
+|         CasA         |   76.37   |   80.40   |  89.42   | [google](https://drive.google.com/file/d/1g1LcHCggUarBzEGxSR6b3cxJJsa7BTRg/view?usp=share_lin) / [baiduyun(6666)](https://pan.baidu.com/s/1FsE-ZuRea_tQdKwxL6ap9Q) |
+| OpenPCDet/Voxel-RCNN |   77.52   |   82.11   |  90.75   | [google](https://drive.google.com/file/d/1EXN9vDlNuaoQi63M5PnosrYomqnxwdDz/view?usp=share_link) / [baiduyun(6666)](https://pan.baidu.com/s/1QxL_K1zUJAaHyxVsWGdBjw) |
+|  OpenPCDet/PV-RCNN   |   75.88   |   76.11   |  88.58   | [google](https://drive.google.com/file/d/1EXN9vDlNuaoQi63M5PnosrYomqnxwdDz/view?usp=share_link) / [baiduyun(6666)](https://pan.baidu.com/s/1lGYGy4_1ReUoxUkAzr8rQg) |
+| OpenPCDet/Point-RCNN |   54.25   |   48.34   |  66.22   | [google](https://drive.google.com/file/d/1Dpz0PMWWQOESabqyyEhN7S_jCQSqcK_K/view?usp=share_link) / [baiduyun(6666)](https://pan.baidu.com/s/1_MWx4YvX8edoJ-SskyL5LA) |
+|     Faster RCNN      |   ----    |   ----    |   ---    | [google](/https://drive.google.com/file/d/1b2f9HKK_dbPIDcoJfW4XmKVIcSgvI6Js/view?usp=share_link) / [baiduyun(6666)](https://pan.baidu.com/s/1KGby_npWfRj9SMzxGmVhAw) |
 
 ### WAYMO Dataset
 
@@ -145,9 +145,7 @@ To run this code, you should organize kitti tracking dataset as below:
 python3 -m dataset_utils.waymo.waymo_dataset 
 ```
 
-**Finally,** your file directory will become as follows. You need to download the ImageSets file from [google](https://drive.google.com/drive/folders/1xanM-5nXgxSvTxNoIFYhrq_mHY8JwVAc?usp=share_link) or [baiduyun(6666)](链接：https://pan.baidu.com/s/1lODHmWvIhY1He-l5iaYD8g 
-提取码：6666 
---来自百度网盘超级会员V5的分享).  
+**Finally,** your file directory will become as follows. You need to download the ImageSets file from [google](https://drive.google.com/drive/folders/1xanM-5nXgxSvTxNoIFYhrq_mHY8JwVAc?usp=share_link) or [baiduyun(6666)](https://pan.baidu.com/s/1lODHmWvIhY1He-l5iaYD8g).  
 
 ```
 ├── data
