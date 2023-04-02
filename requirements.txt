@@ -9,7 +9,6 @@ pyyaml
 scikit-image
 tqdm
 SharedArray
-json
-cv2
+opencv-python
 filterpy
 SharedArray
