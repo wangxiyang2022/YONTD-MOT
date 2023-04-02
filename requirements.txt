@@ -12,3 +12,5 @@ SharedArray
 opencv-python
 filterpy
 SharedArray
+prefetch_generator
+google
