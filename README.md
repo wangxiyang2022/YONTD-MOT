@@ -1,3 +1,5 @@
+<a href="https://info.flagcounter.com/pEDW"><img src="https://s01.flagcounter.com/count/pEDW/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_18/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+
 #  You Only Need  Two Detectors for Multi-Object Tracking Based on Multi-Modal Fusion  
 
 Firstly, this paper proposes a new multi-object tracking framework based on multi-modal fusion. By integrating object detection and multi-object tracking into the same model, this framework avoids the complex data association process in the classical TBD paradigm, and our proposed method does not require additional training. Secondly, by exploring the confidence of historical trajectory regression, we analyze the possible states of the trajectory in the current frame (weak target or strong target) and design a fusion confidence module to guide the non-maximum suppression of trajectory and detection for ordered association. Finally, we conducted extensive experiments on the KITTI and WAYMO datasets. Our proposed method can achieve robust tracking using only two modal detectors and has higher accuracy than many of the latest multi-modal tracking methods based on the TBD paradigm.
@@ -158,6 +160,15 @@ python3 -m dataset_utils.waymo.waymo_dataset
 |   |   |   |── ...
 |   |   |── waymo_processed_data_train_val_test
 │   │   │   │── segment-xxxxxxxx/
+│   │   │   │   │── FRONT
+│   │   │   │      │── 0000.jpg
+│   │   │   │      │── ...
+│   │   │   │   │── FRONT_LEFT
+│   │   │   │   │── FRONT_RIGHT
+│   │   │   │   │── SIDE_LEFT
+│   │   │   │   │── SIDE_RIGHT
+│   │   │   │   │── 0000.npy
+│   │   │   │   │── ...
 |   |   |   |── ...
 │   │   │   │── There are a total of 1150 files(include testing, training and validation).
 │   │   │── pcdet_waymo_track_dbinfos_train_cp.pkl
