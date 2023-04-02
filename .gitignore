@@ -2,7 +2,6 @@
 **build**
 **egg-info**
 **dist**
-data/
 *.pyc
 venv/
 *.idea/
@@ -13,3 +12,8 @@ venv/
 *.zip
 *.bin
 output
+*.so
+data/
+detector/TED/data/
+detector/TED/build/
+detector/mmdetection/
