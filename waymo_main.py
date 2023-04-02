@@ -8,7 +8,7 @@ from detector.pcdet.pcdet.models import load_data_to_gpu
 from detector.CasA.pcdet.datasets import casa_build_dataloader
 from detector.CasA.pcdet.config import casa_cfg_from_yaml_file, casa_cfg
 from detector.CasA.pcdet.utils import common_utils
-from evaluation.waymo.create_submission import main
+from evaluation.waymo.create_submission import testing_set_submission
 from mot.tracker import tracker
 from mot.tracker.TONTDMOT import YONTDMOT
 from mot.tracker.detections import Detections
@@ -206,4 +206,4 @@ if __name__ == "__main__":
         logger.info(ap_result_str)
 
     else:
-        main()
+        testing_set_submission()

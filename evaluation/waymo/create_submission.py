@@ -99,7 +99,7 @@ def creat_submission(dataset_info_path,prediction_info_path,submission_path):
     f.close()
 
 
-def main():
+def testing_set_submission():
     test_dataset_info_path = 'data/waymo/waymo_infos_test.pkl'
     test_prediction_info_path = "output/result_dets.pkl"
     test_submission_path = 'output/'
@@ -111,4 +111,4 @@ def main():
     # creat_submission(val_dataset_info_path,val_prediction_info_path,val_submission_path)
 
 if __name__ == '__main__':
-  main()
+  testing_set_submission()
