@@ -193,6 +193,10 @@ python3 setup.py develop
 # If you want to use the detector of CasA, please run following command:
 cd detector/CasA
 python3 setup.py develop
+
+# If you want to use the detector of TED, please run following command:
+cd detector/TED
+python3 setup.py develop
 ```
 
 
