@@ -41,7 +41,7 @@ The multi-modal fusion-based multi-object tracking method proposed in this paper
 | OpenPCDet/Point-RCNN |   54.25   |   48.34   |  66.22   | [google](https://drive.google.com/file/d/1Dpz0PMWWQOESabqyyEhN7S_jCQSqcK_K/view?usp=share_link) / [baiduyun(6666)](https://pan.baidu.com/s/1_MWx4YvX8edoJ-SskyL5LA) |
 |     Faster RCNN      |   ----    |   ----    |   ---    | [google](/https://drive.google.com/file/d/1b2f9HKK_dbPIDcoJfW4XmKVIcSgvI6Js/view?usp=share_link) / [baiduyun(6666)](https://pan.baidu.com/s/1KGby_npWfRj9SMzxGmVhAw) |
 
-### WAYMO Dataset
+### Waymo Dataset
 
 |            Detectors            | Set  | Vehicle_L2 | Pedestrian_L2 | Cyclist_L2 |
 | :-----------------------------: | :--: | :--------: | :-----------: | :--------: |
@@ -50,7 +50,7 @@ The multi-modal fusion-based multi-object tracking method proposed in this paper
 
 We could not provide the above pretrained models due to [Waymo Dataset License Agreement](https://waymo.com/open/terms/), but you could easily achieve similar performance by training with the default configs of the detector(such as: casa, pcdet).
 
-## <span id="jump3">"Getting Started</span>
+## <span id="jump3">Getting Started</span>
 
 ### Dependency
 
@@ -209,7 +209,7 @@ python3 setup.py develop
 - Then run ` python3 kitti_main.py`   
 - The results are automatically saved to `output/training/`, and evaluated by HOTA metrics.
 
-#### WAYMO Dataset
+#### Waymo Dataset
 
 - Please modify the dataset path(`DATA_PATH`)  in the `config/waymo.yaml ` file to your own path.
 - Then run ` python3 waymo_main.py`    
