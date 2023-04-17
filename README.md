@@ -1,4 +1,4 @@
-![visitors](https://visitor-badge.glitch.me/badge?page_id=wamhxiyang/YONTD-MOT)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=wangxiyang/YONTD-MOT) 
 
 #  You Only Need  Two Detectors for Multi-Object Tracking Based on Multi-Modal Fusion  
 
