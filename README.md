@@ -1,4 +1,4 @@
-![visitors](https://visitor-badge.glitch.me/badge?page_id=wangxiyang/YONTD-MOT) 
+[![Page Views Count](https://badges.toozhao.com/badges/01GY94BEY4RQCFS93XZSXWBWS1/green.svg)](https://badges.toozhao.com/stats/01GY94BEY4RQCFS93XZSXWBWS1 "Get your own page views count badge on badges.toozhao.com")
 
 #  You Only Need  Two Detectors for Multi-Object Tracking Based on Multi-Modal Fusion  
 
