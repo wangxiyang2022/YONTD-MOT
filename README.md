@@ -1,6 +1,8 @@
-<a href="https://info.flagcounter.com/pEDW"><img src="https://s01.flagcounter.com/count/pEDW/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_18/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+[![Page Views Count](https://badges.toozhao.com/badges/01GY94BEY4RQCFS93XZSXWBWS1/green.svg)](https://badges.toozhao.com/stats/01GY94BEY4RQCFS93XZSXWBWS1 "Get your own page views count badge on badges.toozhao.com")
 
 #  You Only Need  Two Detectors for Multi-Object Tracking Based on Multi-Modal Fusion  
+
+This is the offical implementation of paper "[You Only Need Two Detectors to Achieve Multi-Modal 3DMulti-Object Tracking](https://arxiv.org/abs/2304.08709) "
 
 Firstly, this paper proposes a new multi-object tracking framework based on multi-modal fusion. By integrating object detection and multi-object tracking into the same model, this framework avoids the complex data association process in the classical TBD paradigm, and our proposed method does not require additional training. Secondly, by exploring the confidence of historical trajectory regression, we analyze the possible states of the trajectory in the current frame (weak target or strong target) and design a fusion confidence module to guide the non-maximum suppression of trajectory and detection for ordered association. Finally, we conducted extensive experiments on the KITTI and WAYMO datasets. Our proposed method can achieve robust tracking using only two modal detectors and has higher accuracy than many of the latest multi-modal tracking methods based on the TBD paradigm.
 
@@ -41,7 +43,7 @@ The multi-modal fusion-based multi-object tracking method proposed in this paper
 | OpenPCDet/Point-RCNN |   54.25   |   48.34   |  66.22   | [google](https://drive.google.com/file/d/1Dpz0PMWWQOESabqyyEhN7S_jCQSqcK_K/view?usp=share_link) / [baiduyun(6666)](https://pan.baidu.com/s/1_MWx4YvX8edoJ-SskyL5LA) |
 |     Faster RCNN      |   ----    |   ----    |   ---    | [google](/https://drive.google.com/file/d/1b2f9HKK_dbPIDcoJfW4XmKVIcSgvI6Js/view?usp=share_link) / [baiduyun(6666)](https://pan.baidu.com/s/1KGby_npWfRj9SMzxGmVhAw) |
 
-### WAYMO Dataset
+### Waymo Dataset
 
 |            Detectors            | Set  | Vehicle_L2 | Pedestrian_L2 | Cyclist_L2 |
 | :-----------------------------: | :--: | :--------: | :-----------: | :--------: |
@@ -50,7 +52,7 @@ The multi-modal fusion-based multi-object tracking method proposed in this paper
 
 We could not provide the above pretrained models due to [Waymo Dataset License Agreement](https://waymo.com/open/terms/), but you could easily achieve similar performance by training with the default configs of the detector(such as: casa, pcdet).
 
-## <span id="jump3">"Getting Started</span>
+## <span id="jump3">Getting Started</span>
 
 ### Dependency
 
@@ -209,7 +211,7 @@ python3 setup.py develop
 - Then run ` python3 kitti_main.py`   
 - The results are automatically saved to `output/training/`, and evaluated by HOTA metrics.
 
-#### WAYMO Dataset
+#### Waymo Dataset
 
 - Please modify the dataset path(`DATA_PATH`)  in the `config/waymo.yaml ` file to your own path.
 - Then run ` python3 waymo_main.py`    
@@ -228,11 +230,7 @@ This repo is developed from  [OpenPCDet](https://github.com/open-mmlab/OpenPCDet
 If you find this work useful, please consider to cite our paper:
 
 ```
-@ARTICLE{9810346,  
-author={Wang, Xiyang and Fu, Chunyun and Li, Zhankun and Lai, Ying and He, Jiawei},  
-journal={IEEE Robotics and Automation Letters},   
-title={DeepFusionMOT: A 3D Multi-Object Tracking Framework Based on Camera-LiDAR Fusion With Deep Association},   
-year={2022},  volume={7},  number={3},  pages={8260-8267},  doi={10.1109/LRA.2022.3187264}}
+
 
 ```
 
