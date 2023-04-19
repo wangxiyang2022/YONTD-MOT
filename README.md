@@ -21,6 +21,7 @@ Firstly, this paper proposes a new multi-object tracking framework based on mult
 ## <span id="jump">Update Log</span>
 
 * 2023/4/3 Initial update
+* 2023/4/19 Publication of paper and code
 
 ## <span id="Framework">Framework</span>
 
