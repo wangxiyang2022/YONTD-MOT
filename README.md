@@ -230,11 +230,7 @@ This repo is developed from  [OpenPCDet](https://github.com/open-mmlab/OpenPCDet
 If you find this work useful, please consider to cite our paper:
 
 ```
-@ARTICLE{9810346,  
-author={Wang, Xiyang and Fu, Chunyun and Li, Zhankun and Lai, Ying and He, Jiawei},  
-journal={IEEE Robotics and Automation Letters},   
-title={DeepFusionMOT: A 3D Multi-Object Tracking Framework Based on Camera-LiDAR Fusion With Deep Association},   
-year={2022},  volume={7},  number={3},  pages={8260-8267},  doi={10.1109/LRA.2022.3187264}}
+
 
 ```
 
