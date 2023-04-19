@@ -4,6 +4,8 @@
 
 This is the offical implementation of paper "[You Only Need Two Detectors to Achieve Multi-Modal 3DMulti-Object Tracking](https://arxiv.org/abs/2304.08709) "
 
+<img src="assets/Figure1.png" width="70%" height="70%" />
+
 Firstly, this paper proposes a new multi-object tracking framework based on multi-modal fusion. By integrating object detection and multi-object tracking into the same model, this framework avoids the complex data association process in the classical TBD paradigm, and our proposed method does not require additional training. Secondly, by exploring the confidence of historical trajectory regression, we analyze the possible states of the trajectory in the current frame (weak target or strong target) and design a fusion confidence module to guide the non-maximum suppression of trajectory and detection for ordered association. Finally, we conducted extensive experiments on the KITTI and WAYMO datasets. Our proposed method can achieve robust tracking using only two modal detectors and has higher accuracy than many of the latest multi-modal tracking methods based on the TBD paradigm.
 
 
