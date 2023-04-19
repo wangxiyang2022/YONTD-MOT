@@ -1,6 +1,6 @@
 [![Page Views Count](https://badges.toozhao.com/badges/01GY94BEY4RQCFS93XZSXWBWS1/green.svg)](https://badges.toozhao.com/stats/01GY94BEY4RQCFS93XZSXWBWS1 "Get your own page views count badge on badges.toozhao.com")
 
-#  You Only Need  Two Detectors for Multi-Object Tracking Based on Multi-Modal Fusion  
+#  You Only Need Two Detectors to Achieve Multi-Modal 3DMulti-Object Tracking  
 
 This is the offical implementation of paper "[You Only Need Two Detectors to Achieve Multi-Modal 3DMulti-Object Tracking](https://arxiv.org/abs/2304.08709) "
 
