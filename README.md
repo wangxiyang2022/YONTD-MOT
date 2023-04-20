@@ -2,7 +2,7 @@
 
 #  You Only Need Two Detectors to Achieve Multi-Modal 3D Multi-Object Tracking  
 
-This is the offical implementation of paper "[You Only Need Two Detectors to Achieve Multi-Modal 3D Multi-Object Tracking](https://arxiv.org/abs/2304.08709) "
+This is the offical implementation of the paper "[You Only Need Two Detectors to Achieve Multi-Modal 3D Multi-Object Tracking](https://arxiv.org/abs/2304.08709) "
 
 <img src="assets/Figure1.png" width="70%" height="70%" />
 
