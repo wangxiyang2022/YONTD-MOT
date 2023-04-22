@@ -232,7 +232,12 @@ This repo is developed from  [OpenPCDet](https://github.com/open-mmlab/OpenPCDet
 If you find this work useful, please consider to cite our paper:
 
 ```
-
+@article{wang2023you,
+  title={You Only Need Two Detectors to Achieve Multi-Modal 3D Multi-Object Tracking},
+  author={Wang, Xiyang and He, Jiawei and Fu, Chunyun and Meng, Ting and Huang, Mingguang},
+  journal={arXiv preprint arXiv:2304.08709},
+  year={2023}
+}
 
 ```
 
